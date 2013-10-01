@@ -1,5 +1,5 @@
-from django.conf.urls.defaults import url, patterns
-from friendship.views import view_friends, friendship_add_friend, friendship_accept, \
+from django.conf.urls import url, patterns
+from .views import view_friends, friendship_add_friend, friendship_accept, \
         friendship_reject, friendship_cancel, friendship_request_list, \
         friendship_request_list_rejected, friendship_requests_detail, followers,\
         following, follower_add, follower_remove, all_users

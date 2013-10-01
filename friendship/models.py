@@ -7,8 +7,8 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 
-from friendship.exceptions import AlreadyExistsError
-from friendship.signals import friendship_request_created, \
+from .exceptions import AlreadyExistsError
+from .signals import friendship_request_created, \
     friendship_request_rejected, friendship_request_canceled, \
     friendship_request_viewed, friendship_request_accepted, \
     friendship_removed, follower_created, following_created, follower_removed,\

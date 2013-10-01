@@ -9,8 +9,8 @@ except ImportError:
 
 from django.shortcuts import render, get_object_or_404, redirect
 
-from friendship.exceptions import AlreadyExistsError
-from friendship.models import Friend, Follow, FriendshipRequest
+from .exceptions import AlreadyExistsError
+from .models import Friend, Follow, FriendshipRequest
 
 get_friendship_context_object_name = lambda: getattr(settings, 'FRIENDSHIP_CONTEXT_OBJECT_NAME', 'user')
 get_friendship_context_object_list_name = lambda: getattr(settings, 'FRIENDSHIP_CONTEXT_OBJECT_LIST_NAME', 'users')

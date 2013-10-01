@@ -1,6 +1,6 @@
 from django import template
 
-from friendship.models import Friend, Follow
+from ..models import Friend, Follow
 
 register = template.Library()
 

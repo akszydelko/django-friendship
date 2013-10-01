@@ -6,8 +6,8 @@ from django.db import IntegrityError
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 
-from friendship.exceptions import AlreadyExistsError
-from friendship.models import Friend, Follow, FriendshipRequest
+from ..exceptions import AlreadyExistsError
+from ..models import Friend, Follow, FriendshipRequest
 
 
 TEST_TEMPLATES = os.path.join(os.path.dirname(__file__), 'templates')
